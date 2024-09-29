@@ -2,6 +2,9 @@
 
 int main()
 {
-    std::cout << "\n";
-    std::abort;
+    int SomeNum;
+    int *ptr = &SomeNum;
+
+    std::cout << ptr << "\n" << SomeNum; 
+    return 0;
 }
