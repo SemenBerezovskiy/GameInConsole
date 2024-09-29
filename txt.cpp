@@ -1,4 +1,5 @@
 #include<iostream>
+#include"txthead.h"
 
 class ForStud
 {
@@ -22,7 +23,7 @@ int main()
     int &ReferensSomeNum = Object.Var1;
     Fun(&ReferensSomeNum);
 
-    std::cout << Object.ptrToVar << "\n" << ReferensSomeNum << "\n"  << Object.Var1; 
+    Print(Object.Var1);
     
 
 }
