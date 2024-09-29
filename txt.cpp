@@ -1,10 +1,28 @@
 #include<iostream>
 
+class ForStud
+{
+    public:
+
+    int Var1;
+    int *ptrToVar = &Var1;
+
+};
+int Fun(int* O)
+{
+    *O += 21;
+    return 0;
+}
 int main()
 {
-    int SomeNum;
-    int *ptr = &SomeNum;
+    ForStud Object;
+    Object.Var1 = 102;
+    Object.ptrToVar;
 
-    std::cout << ptr << "\n" << SomeNum; 
-    return 0;
+    int &ReferensSomeNum = Object.Var1;
+    Fun(&ReferensSomeNum);
+
+    std::cout << Object.ptrToVar << "\n" << ReferensSomeNum << "\n"  << Object.Var1; 
+    
+
 }
